@@ -113,10 +113,10 @@ Luego, se procede a ejecutar los comandos dados para la actividad:
 ![Configuracion route map](ss_act/parte6_act.png)
 ---
 
-Con esto pueden ocurrir dos casos:
+Cada uno de estos route-maps actúa de manera ligeramente diferente:
 
-- Caso salida_R1: Este route-map permite a R1 llegar solo a la red 192.168.0.0/24 a traves de R0.
-- Caso salida_R2: En este caso, se hace lo mismo que en salida_R1, pero ademas agregando artificialmente 4 pasos al camino.
+- Caso route-map salida_R1: Este route-map permite a R1 llegar solo a la red 192.168.0.0/24 a traves de R0.
+- Caso route-mapsalida_R2: En este caso, se hace lo mismo que en salida_R1, pero ademas agregando artificialmente 4 pasos al camino.
 
 R2 preferiria pasar por R1, ya que por el aumento artificial al tamaño del camino, el camino por R1 le queda mas corto.
 
@@ -153,7 +153,7 @@ Se muestra la ejecucion de los comandos y los resultados de los pings entre los 
 
 Despues de ejecutar estos comandos, vemos que, si hacemos pings entre los PC, aun se pueden comunicar entre ellos.
 
-Se ejecuto el comando dado para la actividad y se hizo ping entre los distintos PC:
+Finalmente, se ejecutó el comando dado para la parte 8 de la actividad y se hizo ping entre los distintos PC:
 
 ---
 ![Shutdown comunicacion entre R0 y R1](ss_act/parte8_act_1.png)
