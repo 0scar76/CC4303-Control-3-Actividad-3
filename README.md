@@ -1,8 +1,9 @@
 # Actividad 3 - Control 3 - CC4303 Redes
 
-En esta actividad no se utilizo repositorio en GitHub, ya que todo se realizo en Einar.
+Link del repositorio con las imágenes en GitHub:
+[Repositorio](https://github.com/0scar76/CC4303-Control-3-Actividad-3.git)
 
-**En esta actividad no se utilizo la inteligencia artificial**
+**En esta actividad no se utilizó la inteligencia artificial.**
 
 ## Integrantes:
 * **Oscar Conejeros Bruce**
@@ -10,47 +11,47 @@ En esta actividad no se utilizo repositorio en GitHub, ya que todo se realizo en
 
 ## Sobre la actividad
 
-En esta actividad, se pidio simular la siguiente red en Einar, mediante el uso de routers BGP:
+En esta actividad, se pidió simular la siguiente red en Einar, mediante el uso de routers BGP:
 
 ![Red a simular](red.jpg)
 
-En la imagen, aquellas IP que estan en color negro corresponden a las elegidas por el grupo.
+En la imagen, aquellas IP que están en color negro corresponden a las elegidas por el grupo.
 
 ## Respuestas
 
-1. Para esta actividad, se decidio elegir el nombre "manzana" para el grupo.
+1. Para esta actividad, se decidió elegir el nombre "manzana" para el grupo.
 
-2. En este ejemplo no hubieron dificultades en la implementacion, ya que las instrucciones estaban bien escructuradas y eran una muy buena guia, pero de todas maneras es interesante poder aprender sobre redes de una forma mas practica y sin riesgo de romper nada.
-A continuacion se muestran imagenes del proceso de creacion de la red y la ejecucion inicial, siguiendo los pasos del ejemplo:
-![Creacion de la red paso 1](ss_ej1/creacion1_ej.png)
-![Creacion de la red paso 2](ss_ej1/creacion2_ej.png)
-![Creacion de la red paso 3_1](ss_ej1/creacion3_ej_1.png)
-![Creacion de la red paso 3_2](ss_ej1/creacion3_ej_2.png)
-![Creacion de la red paso 3_3](ss_ej1/creacion3_ej_3.png)
-![Ejecucion sin nada](ss_ej1/ejecutando_ej.png)
-Luego, se procedio a hacer pings de prueba y se vieron las rutas actuales para verificar que la red funcione correctamente:
+2. En este ejemplo no hubo dificultades en la implementación, ya que las instrucciones estaban bien estructuradas y eran una muy buena guía, pero de todas maneras es interesante poder aprender sobre redes de una forma más acercada a la realidad y sin riesgo de romper nada.
+A continuación se muestran imágenes del proceso de creación de la red y la ejecución inicial, siguiendo los pasos del ejemplo:
+![Creación de la red, paso 1](ss_ej1/creacion1_ej.png)
+![Creación de la red, paso 2](ss_ej1/creacion2_ej.png)
+![Creación de la red, paso 3_1](ss_ej1/creacion3_ej_1.png)
+![Creación de la red, paso 3_2](ss_ej1/creacion3_ej_2.png)
+![Creación de la red, paso 3_3](ss_ej1/creacion3_ej_3.png)
+![Ejecución sin nada](ss_ej1/ejecutando_ej.png)
+Luego, se procedió a hacer pings de prueba y se vieron las rutas actuales para verificar que la red funcione correctamente:
 ![Pings antes](ss_ej1/ping_antes_ej.png)
 ![Rutas antes](ss_ej1/rutas_antes_ej.png)
-Como inicialmente cada router conoce unicamente a los vecinos, se procede a entregar las rutas y volver a probar las conexiones:
-![Pings despues](ss_ej1/ping_despues_ej.png)
-![Rutas despues](ss_ej1/rutas_despues_ej.png)
-Con esto, finalmente se logro la conexion entre los 2 PC.
+Como inicialmente cada router conoce únicamente a los vecinos, se procede a entregar las rutas y volver a probar las conexiones:
+![Pings después](ss_ej1/ping_despues_ej.png)
+![Rutas después](ss_ej1/rutas_despues_ej.png)
+Con esto, finalmente se logró la conexión entre los 2 PC.
 
-3. Este ejemplo fue un poco mas complicado que el anterior, ya que requeria mas conocimientos sobre bgp y la sintaxis y semantica de los comandos para realmente saber que se estaba haciendo. De todas maneras es un ejemplo interesante que ayuda a entender la configuracion de las redes de una forma mas acercada a la realidad.
-A continuacion, se muestran las imagenes de la configuracion de los routers bgp:
-Primero, se configuran los routers como routers bgp con sus respectivos ASN, indicando cuales son sus vecinos, y se hace ping desde PC1 a PC2:
-![Pings primera parte](ss_ej2/ping_antes_bgp.png)
-Ademas, se ve la tabla de rutas de R1:
-![Rutas primera parte](ss_ej2/rutas_antes_bgp.png)
+3. Este ejemplo fue un poco más complicado que el anterior, ya que requería más conocimientos sobre BGP y la sintaxis y semántica de los comandos para realmente saber qué se estaba haciendo. De todas maneras, es un ejemplo interesante que ayuda a entender la configuración de las redes de una forma más cercana a la realidad.
+A continuación, se muestran las imágenes de la configuración de los routers BGP:
+Primero, se configuran los routers como routers BGP con sus respectivos ASN, indicando cuáles son sus vecinos, y se hace ping desde PC1 a PC2:
+![Pings, primera parte](ss_ej2/ping_antes_bgp.png)
+Además, se ve la tabla de rutas de R1:
+![Rutas, primera parte](ss_ej2/rutas_antes_bgp.png)
 Luego se crea una nueva red, para luego filtrarla para que R2 no la promocione:
 ![Nueva red antes del filtro 1](ss_ej2/nueva_red_antes1_bgp.png)
-![Nueva red despues del filtro 1](ss_ej2/nueva_red_despues1_bgp.png)
+![Nueva red después del filtro 1](ss_ej2/nueva_red_despues1_bgp.png)
 Luego se sigue con el caso que, a una nueva red de R2, es R1 quien no quiere permitir que se utilice:
 ![Nueva red antes del filtro 2](ss_ej2/nueva_red_antes2_bgp.png)
-![Nueva red despues del filtro 2](ss_ej2/nueva_red_despues2_bgp.png)
-Concluyendo asi con el ejemplo.
+![Nueva red después del filtro 2](ss_ej2/nueva_red_despues2_bgp.png)
+Concluyendo así con el ejemplo.
 
-4. Se adjuntan las fotos del proceso de creacion del laboratorio donde se simula la red mostrada al  inicio del informe (nn = ñ, Einar no dejaba usar el caracter exacto):
+4. Se adjuntan las fotos del proceso de creación del laboratorio donde se simula la red mostrada al  inicio del informe (nn = ñ):
 ![Creacion de la red paso 1](ss_act/creacion1_act.png)
 ![Creacion de la red paso 2_1](ss_act/creacion2_act_1.png)
 ![Creacion de la red paso 2_2](ss_act/creacion2_act_2.png)
